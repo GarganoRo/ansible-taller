@@ -23,7 +23,7 @@
   
   - name: Configure mail server
     template:
-      src: ./postfix-main.cf.j2
+      src: /templates/postfix-main.cf.j2
       dest: /etc/postfix/main.cf
       owner: root
       group: root
@@ -45,7 +45,7 @@
 
   - name: Copy dovecot mail configuration
     copy:
-      src: ./10-mail.conf
+      src: /deprecated/10-mail.conf
       dest: /etc/dovecot/conf.d/10-mail.conf
       owner: root
       group: root
@@ -67,7 +67,7 @@
 
   - name: Configure squirrelmail
     template:
-      src: ./squirrelmail.conf.j2
+      src: /templates/squirrelmail.conf.j2
       dest: /etc/squirrelmail/config.php
       owner: root
       group: root
