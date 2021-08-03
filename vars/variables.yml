@@ -6,6 +6,6 @@ packages:
 - dovecot
 - squirrelmail
 
-hostname: correo.ejemplo.com.uy
-domain: ejemplo.com.uy
+hostname: centos-taller.equipo2.com.uy
+domain: equipo2.com.uy
 networks: 127.0.0.0/8, 192.168.1.0/24
